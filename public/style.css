@@ -1,0 +1,30 @@
+ body{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper{
+       
+        margin: auto;
+    }
+  
+    .navbar{
+        background-color: black;
+        color: white;    
+        box-shadow: 0 2px 4px rgba(3, 3, 3, 0.1);
+        
+    }   
+    .navbar a{
+        padding:10px;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        margin-left: 15px;
+        transition: all 0.3s ease-in-out  ;
+    }
+    .navbar a:hover{
+        color: red;
+        transform: scale(1.2);
+        
+    }
