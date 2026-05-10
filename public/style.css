@@ -28,3 +28,22 @@
         transform: scale(1.2);
         
     }
+    .reg-box{
+        background-color: rgba(33, 14, 14, 0.597);
+        color: white;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+      
+        border-radius: 20px;
+         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.93); 
+    }
+      .login-box{
+        background-color: rgba(33, 14, 14, 0.597);
+        color: white;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 20px;
+         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.93); 
+    }
