@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+
+
+export const mergeHtmlStrings = (userArray) => {
+    console.log(userArray)
+const str = userArray.reduce((acc, user) => 
+    user.length ? acc + `<li>${user.split(",")[0]} : ${user.split(",")[1]} </li> `: acc , "" );
+
+
+
+
+    return `
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,33 +35,19 @@
             
         </nav>
         
-        <h3 class="d-flex justify-content-center align-items-center">Welcome Back! please login to go to your dashboard</h3>
+        <h1 class="d-flex justify-content-center align-items-center">Welcome to the User App</h1>
         <hr>
-
-
-
-
-
-        
-<form class="mt-5 login-box p-4 d-flex flex-column "
-method = "post"
-action="/login"
-enctype="application/x-www-form-urlencoded"
->
-  <h3 class="text-center">Login</h3>
-  <hr>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-   
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  
-  <button type="submit" class="btn btn-primary w-100">Submit</button>
-</form>
-
-    </div>
+<div class="container bg-light p-3 mb-5">
+    create account with us to be connected . Thank you. please sign up now or login</div>
+<div class="container bg-dark text-white border rounded p-3 mb-5">
+    <h3 class="text-center">List of registered users</h3>
+    <hr> <ul>`
+    + str +
+    
+     ` </ul></div>
 </body>
 </html>
+    
+    
+    `
+}
